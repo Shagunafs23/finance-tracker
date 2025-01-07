@@ -1,16 +1,7 @@
 {
-  "redirects": [
-    {
-      "source": "/:match*",
-      "destination": "/index.html",
-      "permanent": false
-    }
-  ]
-}
-{
   "builds": [
     {
-      "src": "build/index.html",
+      "src": "build/**",
       "use": "@vercel/static"
     }
   ]
