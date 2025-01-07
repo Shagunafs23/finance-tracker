@@ -1,6 +1,17 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "redirects": [
+    {
+      "source": "/:match*",
+      "destination": "/index.html",
+      "permanent": false
+    }
   ]
 }
-
+{
+  "builds": [
+    {
+      "src": "build/index.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
